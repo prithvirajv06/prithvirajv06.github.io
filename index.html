@@ -1,140 +1,322 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prithviraj V | AVP & Architect</title>
+
+    <title>Prithviraj V | Full-Stack Architect</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        brand: '#6366f1', // Indigo 500
-                        accent: '#06b6d4', // Cyan 500
-                        darker: '#020617', // Slate 950
+                        brand: '#2563eb',
+                        dark: '#020617'
                     }
                 }
             }
         }
     </script>
-    <style>
-        .glass { background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gradient-text { background: linear-gradient(90deg, #6366f1, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .bg-glow { background: radial-gradient(circle at 50% -20%, #1e1b4b, #020617); }
-    </style>
-</head>
-<body class="bg-darker text-slate-300 font-sans antialiased selection:bg-brand selection:text-white bg-glow min-h-screen">
 
-    <header class="relative pt-20 pb-16 px-4 overflow-hidden">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-96 bg-brand/10 blur-[120px] rounded-full"></div>
+    <style>
+        html {
+            scroll-behavior: smooth
+        }
+    </style>
+
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- HERO -->
+
+    <header class="relative text-white py-24 overflow-hidden bg-gradient-to-r from-blue-900 via-slate-900 to-blue-900">
+
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-brand uppercase bg-brand/10 border border-brand/20 rounded-full">
-                Available for Architectural Advisory
-            </div>
-            <h1 class="text-5xl sm:text-7xl font-black tracking-tight mb-4 text-white">
-                Prithviraj <span class="gradient-text">V</span>
+
+            <h1 class="text-5xl font-extrabold mb-4 tracking-tight">
+                Prithviraj V
             </h1>
-            <p class="text-lg sm:text-2xl text-slate-400 font-light mb-10 max-w-2xl mx-auto">
-                Assistant Vice President & <span class="text-white font-medium">Full-Stack Architect</span> specializing in high-scale financial ecosystems.
+
+            <p class="text-xl text-slate-300 mb-6">
+                <span id="typing"></span>
             </p>
-            
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="mailto:prithvirajv@outlook.com" class="px-6 py-3 bg-white text-darker font-bold rounded-lg hover:bg-brand hover:text-white transition-all transform hover:-translate-y-1">
-                    Contact Me
+
+            <div class="flex justify-center gap-6 text-lg">
+
+                <a href="mailto:prithvirajv@outlook.com" class="hover:text-blue-400">
+                    <i class="fa fa-envelope"></i>
                 </a>
-                <div class="flex items-center gap-4 px-6 py-3 glass rounded-lg">
-                    <a href="https://github.com/prithvirajv06" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
-                    <a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/" target="_blank" class="hover:text-blue-400 transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
-                </div>
+
+                <a href="https://github.com/prithvirajv06" target="_blank" class="hover:text-blue-400">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/" target="_blank"
+                    class="hover:text-blue-400">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
             </div>
+
         </div>
+
     </header>
 
-    <main class="max-w-5xl mx-auto px-4 py-12 space-y-20">
+    <!-- MAIN -->
 
-        <section>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="glass p-6 rounded-2xl border-t-2 border-brand/50">
-                    <i class="fas fa-layer-group text-brand mb-4 text-2xl"></i>
-                    <h3 class="text-white font-bold mb-2">Backend</h3>
-                    <p class="text-xs text-slate-500 uppercase tracking-wider font-bold">Go, Java, Kafka</p>
-                </div>
-                <div class="glass p-6 rounded-2xl border-t-2 border-accent/50">
-                    <i class="fas fa-mobile-alt text-accent mb-4 text-2xl"></i>
-                    <h3 class="text-white font-bold mb-2">Mobile</h3>
-                    <p class="text-xs text-slate-500 uppercase tracking-wider font-bold">React Native, Flutter</p>
-                </div>
-                <div class="glass p-6 rounded-2xl border-t-2 border-brand/50">
-                    <i class="fas fa-cloud-code text-brand mb-4 text-2xl"></i>
-                    <h3 class="text-white font-bold mb-2">Cloud</h3>
-                    <p class="text-xs text-slate-500 uppercase tracking-wider font-bold">OpenShift, Firebase</p>
-                </div>
-                <div class="glass p-6 rounded-2xl border-t-2 border-accent/50">
-                    <i class="fas fa-brain text-accent mb-4 text-2xl"></i>
-                    <h3 class="text-white font-bold mb-2">AI/ML</h3>
-                    <p class="text-xs text-slate-500 uppercase tracking-wider font-bold">Azure ML, Python</p>
-                </div>
-            </div>
+    <main class="max-w-5xl mx-auto px-6 py-16 space-y-16">
+
+        <!-- SUMMARY -->
+
+        <section class="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
+
+            <h2 class="text-2xl font-bold mb-4 border-b-2 border-brand pb-2">
+                <i class="fa fa-user-tie text-brand mr-2"></i>
+                Professional Summary
+            </h2>
+
+            <p class="text-slate-600 leading-relaxed">
+                Technology leader and Senior Software Engineer with 9+ years experience building scalable enterprise
+                systems in Investment Banking and Insurance domains. Specialized in microservices architecture,
+                event-driven platforms using Kafka, and containerized deployments on OpenShift.
+            </p>
+
+            <p class="text-slate-600 mt-4 leading-relaxed">
+                I actively design modern systems using Go, React Native, Angular and distributed backend architectures
+                to bridge complex business requirements with high-performance engineering.
+            </p>
+
         </section>
 
-        <section class="space-y-8">
-            <h2 class="text-3xl font-bold text-white flex items-center gap-4">
-                <span class="w-12 h-px bg-brand"></span> Experience
+        <!-- SKILLS -->
+
+        <section class="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
+
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-brand pb-2">
+                <i class="fa fa-code text-brand mr-2"></i>
+                Technical Skills
             </h2>
-            
+
+            <div class="flex flex-wrap gap-3">
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Java</span>
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Go</span>
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">JavaScript</span>
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">TypeScript</span>
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Angular</span>
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">React
+                    Native</span>
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Microservices</span>
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Kafka</span>
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Azure
+                    DevOps</span>
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">OpenShift</span>
+
+                <span
+                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Azure
+                    AI / ML</span>
+
+            </div>
+
+        </section>
+
+        <!-- EXPERIENCE -->
+
+        <section class="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
+
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-brand pb-2">
+                <i class="fa fa-briefcase text-brand mr-2"></i>
+                Professional Experience
+            </h2>
+
             <div class="space-y-6">
-                <div class="glass p-8 rounded-3xl relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 p-8 opacity-10 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-building text-8xl text-white"></i>
-                    </div>
-                    <div class="relative z-10">
-                        <span class="text-brand font-bold text-sm uppercase tracking-widest">Currently</span>
-                        <h3 class="text-2xl font-bold text-white mt-2">Assistant Vice President</h3>
-                        <p class="text-slate-400 font-medium mb-4">Citi • Investment Banking Technology</p>
-                        <ul class="space-y-3 text-slate-300 max-w-2xl">
-                            <li class="flex gap-3"><i class="fas fa-check-circle text-brand mt-1"></i> Architecting low-latency event-streaming solutions via Kafka.</li>
-                            <li class="flex gap-3"><i class="fas fa-check-circle text-brand mt-1"></i> Leading M&A Deal Origination System transformation.</li>
-                        </ul>
-                    </div>
+
+                <div>
+
+                    <h3 class="font-bold text-lg">
+                        Assistant Vice President — Citi
+                    </h3>
+
+                    <p class="text-sm text-slate-500 mb-2">
+                        Investment Banking Technology | Bangalore
+                    </p>
+
+                    <p class="text-slate-600">
+                        Leading development of a Deal Origination System managing M&A workflows using microservices
+                        architecture and event streaming with Kafka.
+                    </p>
+
                 </div>
+
+                <div>
+
+                    <h3 class="font-bold text-lg">
+                        Senior Full-Stack Developer — weSure
+                    </h3>
+
+                    <p class="text-sm text-slate-500 mb-2">
+                        Insurance Platform | Bangalore
+                    </p>
+
+                    <p class="text-slate-600">
+                        Built enterprise insurance platforms and implemented AI-driven computer vision solutions using
+                        Azure ML for claims and document automation.
+                    </p>
+
+                </div>
+
             </div>
+
         </section>
 
-        <section class="space-y-8">
-            <h2 class="text-3xl font-bold text-white flex items-center gap-4">
-                <span class="w-12 h-px bg-accent"></span> Featured Build
+        <!-- PROJECTS -->
+
+        <section class="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg">
+
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-brand pb-2">
+                <i class="fa fa-laptop-code text-brand mr-2"></i>
+                Projects
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="group relative p-1 rounded-2xl bg-gradient-to-br from-brand/20 to-accent/20 hover:from-brand hover:to-accent transition-all duration-500">
-                    <div class="bg-darker p-8 rounded-[14px] h-full transition-all">
-                        <h3 class="text-xl font-bold text-white mb-2">GlossPlus Ecosystem</h3>
-                        <p class="text-slate-400 text-sm mb-6">A high-performance tripartite solution for service industries using React Native and Firebase.</p>
-                        <div class="flex gap-3">
-                            <span class="text-[10px] font-bold px-2 py-1 glass rounded text-white">REACT NATIVE</span>
-                            <span class="text-[10px] font-bold px-2 py-1 glass rounded text-white">FIREBASE</span>
-                        </div>
-                    </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <div class="bg-slate-100 p-6 rounded-lg hover:shadow-lg transition">
+
+                    <h3 class="font-bold text-lg mb-2">
+                        Rule Management System
+                    </h3>
+
+                    <p class="text-sm text-slate-600 mb-4">
+                        High performance rule engine designed to decouple business logic from application services with
+                        mobile UI.
+                    </p>
+
+                    <a href="https://github.com/prithvirajv06/rule-management-system" target="_blank"
+                        class="text-brand font-semibold">
+                        View Repository → </a>
+
                 </div>
-                <div class="group relative p-1 rounded-2xl bg-gradient-to-br from-brand/20 to-accent/20 hover:from-brand hover:to-accent transition-all duration-500">
-                    <div class="bg-darker p-8 rounded-[14px] h-full transition-all">
-                        <h3 class="text-xl font-bold text-white mb-2">Rule Engine (Go)</h3>
-                        <p class="text-slate-400 text-sm mb-6">Microservices-based engine designed for high-concurrency business logic decoupling.</p>
-                        <div class="flex gap-3">
-                            <span class="text-[10px] font-bold px-2 py-1 glass rounded text-white">GOLANG</span>
-                            <span class="text-[10px] font-bold px-2 py-1 glass rounded text-white">KAFKA</span>
-                        </div>
-                    </div>
+
+                <div class="bg-slate-100 p-6 rounded-lg hover:shadow-lg transition">
+
+                    <h3 class="font-bold text-lg mb-2">
+                        Dental Clinic Marketing
+                    </h3>
+
+                    <p class="text-sm text-slate-600 mb-4">
+                        Angular + Express full stack lead generation platform with API-driven architecture.
+                    </p>
+
+                    <a href="https://github.com/prithvirajv06/dental-clinic-marketing" target="_blank"
+                        class="text-brand font-semibold">
+                        View Repository → </a>
+
                 </div>
+
             </div>
+
+        </section>
+
+        <!-- GITHUB -->
+
+        <section class="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg text-center">
+
+            <h2 class="text-2xl font-bold mb-6 border-b-2 border-brand pb-2">
+                GitHub Stats
+            </h2>
+
+            <img
+                src="https://github-readme-stats.vercel.app/api?username=prithvirajv06&show_icons=true&theme=tokyonight">
+
+            <img class="mt-4"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=prithvirajv06&layout=compact&theme=tokyonight">
+
         </section>
 
     </main>
 
-    <footer class="py-12 text-center text-slate-600 text-sm border-t border-white/5">
-        <p>© 2026 Prithviraj V. Engineered for Performance.</p>
+    <!-- FOOTER -->
+
+    <footer class="bg-dark text-slate-400 py-6 text-center">
+
+        <p>© 2026 Prithviraj V</p>
+
     </footer>
 
+    <!-- FLOATING SOCIAL -->
+
+    <div class="fixed bottom-6 right-6 flex flex-col gap-4 text-xl">
+
+        <a href="https://github.com/prithvirajv06"
+            class="bg-slate-900 text-white p-3 rounded-full hover:bg-blue-600 transition">
+
+            <i class="fab fa-github"></i>
+
+        </a>
+
+        <a href="https://linkedin.com/in/prithviraj-vetrivelu-8bb183264"
+            class="bg-slate-900 text-white p-3 rounded-full hover:bg-blue-600 transition">
+
+            <i class="fab fa-linkedin"></i>
+
+        </a>
+
+    </div>
+
+    <script>
+
+        new Typed('#typing', {
+            strings: [
+                "Assistant Vice President",
+                "Full-Stack Architect",
+                "Microservices Specialist",
+                "Distributed Systems Engineer"
+            ],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        })
+
+        ScrollReveal().reveal('section', {
+            distance: '40px',
+            duration: 800,
+            origin: 'bottom',
+            interval: 200
+        })
+
+    </script>
+
 </body>
+
 </html>
