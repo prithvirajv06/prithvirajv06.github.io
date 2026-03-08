@@ -6,23 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Prithviraj V | Full-Stack Architect</title>
+    <title>Prithviraj V | AVP & Full-Stack Architect</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-    <script src="https://unpkg.com/scrollreveal"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        brand: '#2563eb',
-                        dark: '#020617'
+                        brand: "#2563eb",
+                        dark: "#020617"
                     }
                 }
             }
@@ -41,32 +38,54 @@
 
     <!-- HERO -->
 
-    <header class="relative text-white py-24 overflow-hidden bg-gradient-to-r from-blue-900 via-slate-900 to-blue-900">
+    <header class="bg-dark text-white py-24 px-6">
 
-        <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 
-            <h1 class="text-5xl font-extrabold mb-4 tracking-tight">
-                Prithviraj V
-            </h1>
+            <div>
 
-            <p class="text-xl text-slate-300 mb-6">
-                <span id="typing"></span>
-            </p>
+                <h1 class="text-5xl font-bold leading-tight mb-6">
+                    Prithviraj V
+                </h1>
 
-            <div class="flex justify-center gap-6 text-lg">
+                <p class="text-xl text-slate-300 mb-6">
+                    <span id="typing"></span>
+                </p>
 
-                <a href="mailto:prithvirajv@outlook.com" class="hover:text-blue-400">
-                    <i class="fa fa-envelope"></i>
-                </a>
+                <p class="text-slate-400 leading-relaxed mb-8">
+                    Technology leader with 9+ years of experience designing enterprise systems for
+                    Investment Banking and Insurance domains. Specialized in scalable microservices,
+                    event-driven architecture, and distributed systems.
+                </p>
 
-                <a href="https://github.com/prithvirajv06" target="_blank" class="hover:text-blue-400">
-                    <i class="fab fa-github"></i>
-                </a>
+                <div class="flex gap-4">
 
-                <a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/" target="_blank"
-                    class="hover:text-blue-400">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+                    <a href="mailto:prithvirajv@outlook.com"
+                        class="bg-brand px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                        Contact </a>
+
+                    <a href="https://github.com/prithvirajv06" target="_blank"
+                        class="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-800 transition">
+                        GitHub </a>
+
+                </div>
+
+            </div>
+
+            <div class="hidden md:flex justify-center">
+
+                <div class="bg-slate-900 p-6 rounded-xl shadow-lg w-80">
+
+                    <p class="text-green-400 text-sm mb-2">$ whoami</p>
+                    <p class="text-white mb-4">Prithviraj V</p>
+
+                    <p class="text-green-400 text-sm mb-2">$ role</p>
+                    <p class="text-white mb-4">Assistant Vice President</p>
+
+                    <p class="text-green-400 text-sm mb-2">$ focus</p>
+                    <p class="text-white">Microservices • Event Systems • Cloud Platforms</p>
+
+                </div>
 
             </div>
 
@@ -76,76 +95,91 @@
 
     <!-- MAIN -->
 
-    <main class="max-w-5xl mx-auto px-6 py-16 space-y-16">
-
-        <!-- SUMMARY -->
-
-        <section class="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
-
-            <h2 class="text-2xl font-bold mb-4 border-b-2 border-brand pb-2">
-                <i class="fa fa-user-tie text-brand mr-2"></i>
-                Professional Summary
-            </h2>
-
-            <p class="text-slate-600 leading-relaxed">
-                Technology leader and Senior Software Engineer with 9+ years experience building scalable enterprise
-                systems in Investment Banking and Insurance domains. Specialized in microservices architecture,
-                event-driven platforms using Kafka, and containerized deployments on OpenShift.
-            </p>
-
-            <p class="text-slate-600 mt-4 leading-relaxed">
-                I actively design modern systems using Go, React Native, Angular and distributed backend architectures
-                to bridge complex business requirements with high-performance engineering.
-            </p>
-
-        </section>
+    <main class="max-w-6xl mx-auto px-6 py-16 space-y-16">
 
         <!-- SKILLS -->
 
-        <section class="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
+        <section>
 
-            <h2 class="text-2xl font-bold mb-6 border-b-2 border-brand pb-2">
-                <i class="fa fa-code text-brand mr-2"></i>
-                Technical Skills
+            <h2 class="text-3xl font-bold mb-10">
+                Technical Expertise
             </h2>
 
-            <div class="flex flex-wrap gap-3">
+            <div class="grid md:grid-cols-3 gap-8">
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Java</span>
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Go</span>
+                    <h3 class="font-semibold mb-4 text-lg">
+                        Languages
+                    </h3>
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">JavaScript</span>
+                    <div class="flex flex-wrap gap-2">
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">TypeScript</span>
+                        <span class="skill">Java</span> <span class="skill">Go</span> <span
+                            class="skill">JavaScript</span> <span class="skill">TypeScript</span>
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Angular</span>
+                    </div>
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">React
-                    Native</span>
+                </div>
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Microservices</span>
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Kafka</span>
+                    <h3 class="font-semibold mb-4 text-lg">
+                        Frontend
+                    </h3>
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Azure
-                    DevOps</span>
+                    <div class="flex flex-wrap gap-2">
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">OpenShift</span>
+                        <span class="skill">Angular</span> <span class="skill">React Native</span>
 
-                <span
-                    class="px-4 py-1 bg-blue-50 text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition">Azure
-                    AI / ML</span>
+                    </div>
+
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
+
+                    <h3 class="font-semibold mb-4 text-lg">
+                        Architecture
+                    </h3>
+
+                    <div class="flex flex-wrap gap-2">
+
+                        <span class="skill">Microservices</span> <span class="skill">Kafka</span> <span
+                            class="skill">Event-Driven Systems</span> <span class="skill">REST APIs</span>
+
+                    </div>
+
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
+
+                    <h3 class="font-semibold mb-4 text-lg">
+                        Cloud / DevOps
+                    </h3>
+
+                    <div class="flex flex-wrap gap-2">
+
+                        <span class="skill">Azure DevOps</span> <span class="skill">OpenShift</span> <span
+                            class="skill">Docker</span> <span class="skill">Kubernetes</span>
+
+                    </div>
+
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-sm border">
+
+                    <h3 class="font-semibold mb-4 text-lg">
+                        AI / Data
+                    </h3>
+
+                    <div class="flex flex-wrap gap-2">
+
+                        <span class="skill">Azure AI</span> <span class="skill">Machine Learning</span> <span
+                            class="skill">Computer Vision</span>
+
+                    </div>
+
+                </div>
 
             </div>
 
@@ -153,46 +187,53 @@
 
         <!-- EXPERIENCE -->
 
-        <section class="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg hover:scale-[1.02] transition">
+        <section>
 
-            <h2 class="text-2xl font-bold mb-6 border-b-2 border-brand pb-2">
-                <i class="fa fa-briefcase text-brand mr-2"></i>
+            <h2 class="text-3xl font-bold mb-10">
                 Professional Experience
             </h2>
 
-            <div class="space-y-6">
+            <div class="space-y-10">
 
                 <div>
 
-                    <h3 class="font-bold text-lg">
+                    <h3 class="text-xl font-semibold">
                         Assistant Vice President — Citi
                     </h3>
 
-                    <p class="text-sm text-slate-500 mb-2">
+                    <p class="text-sm text-slate-500 mb-4">
                         Investment Banking Technology | Bangalore
                     </p>
 
-                    <p class="text-slate-600">
-                        Leading development of a Deal Origination System managing M&A workflows using microservices
-                        architecture and event streaming with Kafka.
-                    </p>
+                    <ul class="list-disc ml-6 text-slate-600 space-y-2">
+
+                        <li>Leading development of Deal Origination systems supporting complex M&A workflows.</li>
+
+                        <li>Architecting event-driven microservices using Kafka for high throughput processing.</li>
+
+                        <li>Managing containerized deployments using OpenShift.</li>
+
+                    </ul>
 
                 </div>
 
                 <div>
 
-                    <h3 class="font-bold text-lg">
+                    <h3 class="text-xl font-semibold">
                         Senior Full-Stack Developer — weSure
                     </h3>
 
-                    <p class="text-sm text-slate-500 mb-2">
-                        Insurance Platform | Bangalore
+                    <p class="text-sm text-slate-500 mb-4">
+                        Insurance Technology Platform
                     </p>
 
-                    <p class="text-slate-600">
-                        Built enterprise insurance platforms and implemented AI-driven computer vision solutions using
-                        Azure ML for claims and document automation.
-                    </p>
+                    <ul class="list-disc ml-6 text-slate-600 space-y-2">
+
+                        <li>Built enterprise B2B and B2C insurance platforms.</li>
+
+                        <li>Developed AI solutions using Azure ML and computer vision.</li>
+
+                    </ul>
 
                 </div>
 
@@ -202,24 +243,22 @@
 
         <!-- PROJECTS -->
 
-        <section class="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg">
+        <section>
 
-            <h2 class="text-2xl font-bold mb-6 border-b-2 border-brand pb-2">
-                <i class="fa fa-laptop-code text-brand mr-2"></i>
-                Projects
+            <h2 class="text-3xl font-bold mb-10">
+                Featured Projects
             </h2>
 
-            <div class="grid md:grid-cols-2 gap-6">
+            <div class="grid md:grid-cols-3 gap-8">
 
-                <div class="bg-slate-100 p-6 rounded-lg hover:shadow-lg transition">
+                <div class="bg-white p-6 rounded-lg border hover:shadow-lg transition">
 
-                    <h3 class="font-bold text-lg mb-2">
+                    <h3 class="font-semibold text-lg mb-2">
                         Rule Management System
                     </h3>
 
                     <p class="text-sm text-slate-600 mb-4">
-                        High performance rule engine designed to decouple business logic from application services with
-                        mobile UI.
+                        High-performance rule engine separating business logic from application services.
                     </p>
 
                     <a href="https://github.com/prithvirajv06/rule-management-system" target="_blank"
@@ -228,17 +267,33 @@
 
                 </div>
 
-                <div class="bg-slate-100 p-6 rounded-lg hover:shadow-lg transition">
+                <div class="bg-white p-6 rounded-lg border hover:shadow-lg transition">
 
-                    <h3 class="font-bold text-lg mb-2">
+                    <h3 class="font-semibold text-lg mb-2">
                         Dental Clinic Marketing
                     </h3>
 
                     <p class="text-sm text-slate-600 mb-4">
-                        Angular + Express full stack lead generation platform with API-driven architecture.
+                        Angular + Express lead management platform for clinics.
                     </p>
 
                     <a href="https://github.com/prithvirajv06/dental-clinic-marketing" target="_blank"
+                        class="text-brand font-semibold">
+                        View Repository → </a>
+
+                </div>
+
+                <div class="bg-white p-6 rounded-lg border hover:shadow-lg transition">
+
+                    <h3 class="font-semibold text-lg mb-2">
+                        Nimbus UTA
+                    </h3>
+
+                    <p class="text-sm text-slate-600 mb-4">
+                        Microservices utility architecture built using Go and Express.
+                    </p>
+
+                    <a href="https://github.com/prithvirajv06/nimbus-uta" target="_blank"
                         class="text-brand font-semibold">
                         View Repository → </a>
 
@@ -250,17 +305,13 @@
 
         <!-- GITHUB -->
 
-        <section class="bg-white/70 backdrop-blur-md p-8 rounded-xl shadow-lg text-center">
+        <section class="text-center">
 
-            <h2 class="text-2xl font-bold mb-6 border-b-2 border-brand pb-2">
-                GitHub Stats
+            <h2 class="text-3xl font-bold mb-10">
+                GitHub Activity
             </h2>
 
-            <img
-                src="https://github-readme-stats.vercel.app/api?username=prithvirajv06&show_icons=true&theme=tokyonight">
-
-            <img class="mt-4"
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=prithvirajv06&layout=compact&theme=tokyonight">
+            <img src="https://github-readme-stats.vercel.app/api?username=prithvirajv06&show_icons=true&theme=default">
 
         </section>
 
@@ -268,35 +319,34 @@
 
     <!-- FOOTER -->
 
-    <footer class="bg-dark text-slate-400 py-6 text-center">
+    <footer class="bg-dark text-slate-400 py-8 text-center">
 
         <p>© 2026 Prithviraj V</p>
 
+        <div class="mt-4 flex justify-center gap-6 text-xl">
+
+            <a href="https://github.com/prithvirajv06"><i class="fab fa-github"></i></a>
+
+            <a href="https://linkedin.com/in/prithviraj-vetrivelu-8bb183264"><i class="fab fa-linkedin"></i></a>
+
+        </div>
+
     </footer>
 
-    <!-- FLOATING SOCIAL -->
-
-    <div class="fixed bottom-6 right-6 flex flex-col gap-4 text-xl">
-
-        <a href="https://github.com/prithvirajv06"
-            class="bg-slate-900 text-white p-3 rounded-full hover:bg-blue-600 transition">
-
-            <i class="fab fa-github"></i>
-
-        </a>
-
-        <a href="https://linkedin.com/in/prithviraj-vetrivelu-8bb183264"
-            class="bg-slate-900 text-white p-3 rounded-full hover:bg-blue-600 transition">
-
-            <i class="fab fa-linkedin"></i>
-
-        </a>
-
-    </div>
+    <style>
+        .skill {
+            padding: 6px 12px;
+            background: #eff6ff;
+            color: #2563eb;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+    </style>
 
     <script>
 
-        new Typed('#typing', {
+        new Typed("#typing", {
             strings: [
                 "Assistant Vice President",
                 "Full-Stack Architect",
@@ -306,13 +356,6 @@
             typeSpeed: 60,
             backSpeed: 40,
             loop: true
-        })
-
-        ScrollReveal().reveal('section', {
-            distance: '40px',
-            duration: 800,
-            origin: 'bottom',
-            interval: 200
         })
 
     </script>
