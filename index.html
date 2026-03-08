@@ -6,186 +6,191 @@
     <title>Prithviraj V | AVP & Full-Stack Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: '#0052cc', // Professional deep blue
-                        dark: '#0f172a',  // Slate 900
-                    }
-                }
-            }
-        }
-    </script>
-</head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand selection:text-white">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; }
 
-    <header class="bg-dark text-white py-16 sm:py-20 px-4 shadow-lg border-b-4 border-brand">
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight mb-3">Prithviraj V</h1>
-            <p class="text-lg sm:text-xl text-slate-300 font-medium mb-6">Assistant Vice President | Full-Stack & Microservices Architecture</p>
+        .glass {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #22d3ee 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .bg-animate {
+            background: radial-gradient(circle at 50% 50%, #1e293b 0%, #0f172a 100%);
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+        }
+
+        .blob {
+            position: absolute;
+            width: 500px; height: 500px;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(34, 211, 238, 0.15) 100%);
+            filter: blur(80px);
+            border-radius: 50%;
+            z-index: -1;
+            animation: move 20s infinite alternate;
+        }
+
+        @keyframes move {
+            from { transform: translate(-10%, -10%); }
+            to { transform: translate(20%, 20%); }
+        }
+    </style>
+</head>
+<body class="text-slate-200 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <div class="bg-animate"></div>
+    <div class="blob"></div>
+
+    <header class="py-20 px-4 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 rounded-full">
+                Available for Innovation
+            </span>
+            <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight mb-4 text-white">
+                Prithviraj <span class="gradient-text">V</span>
+            </h1>
+            <p class="text-xl sm:text-2xl text-slate-400 font-light mb-8 max-w-2xl mx-auto">
+                Assistant Vice President <span class="mx-2 text-indigo-500">|</span> Full-Stack & Microservices Architect
+            </p>
             
-            <div class="flex flex-wrap justify-center gap-6 text-sm sm:text-base font-medium">
-                <a href="mailto:prithvirajv@outlook.com" class="text-slate-300 hover:text-white hover:underline transition-colors flex items-center gap-2">
-                    <i class="fas fa-envelope text-brand"></i> prithvirajv@outlook.com
+            <div class="flex flex-wrap justify-center gap-4 sm:gap-8">
+                <a href="mailto:prithvirajv@outlook.com" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <span class="text-sm font-medium">Email</span>
                 </a>
-                <a href="https://github.com/prithvirajv06" target="_blank" class="text-slate-300 hover:text-white hover:underline transition-colors flex items-center gap-2">
-                    <i class="fab fa-github text-brand"></i> GitHub
+                <a href="https://github.com/prithvirajv06" target="_blank" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <span class="text-sm font-medium">GitHub</span>
                 </a>
-                <a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/" target="_blank" class="text-slate-300 hover:text-white hover:underline transition-colors flex items-center gap-2">
-                    <i class="fab fa-linkedin text-brand"></i> LinkedIn
+                <a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/" target="_blank" class="group flex items-center gap-2 text-slate-400 hover:text-white transition-all">
+                    <div class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center group-hover:bg-indigo-600 transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <span class="text-sm font-medium">LinkedIn</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-4 py-12 space-y-12">
+    <main class="max-w-4xl mx-auto px-4 pb-24 space-y-16">
 
-        <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 sm:p-8 hover:shadow-md transition-shadow">
-            <h2 class="text-2xl font-bold text-dark border-b-2 border-brand pb-2 mb-6 flex items-center gap-3">
-                <i class="fas fa-user-tie text-brand"></i> Professional Summary
+        <section class="glass rounded-3xl p-8 sm:p-10 transition-all hover:border-indigo-500/30">
+            <h2 class="text-sm font-black uppercase tracking-[0.2em] text-indigo-400 mb-6 flex items-center gap-3">
+                <span class="w-8 h-[1px] bg-indigo-500"></span> About Me
             </h2>
-            <div class="text-slate-600 leading-relaxed space-y-4">
-                <p>Enthusiastic technology leader and Senior Software Engineer with over 9 years of experience driving digital transformation across Investment Banking and Insurance sectors. Expert in designing scalable Microservices architectures, event-driven systems (Kafka), and robust containerized deployments (OpenShift).</p>
-                <p>Beyond my professional leadership, I maintain an active hand in architectural innovation through full-stack side projects using <strong class="text-slate-800">Go, React Native, and Angular</strong>. This commitment to continuous learning ensures my technical strategies are grounded in modern, high-performance engineering practices, effectively bridging the gap between complex business requirements and cutting-edge technical execution.</p>
+            <div class="text-lg text-slate-300 leading-relaxed space-y-6 font-light">
+                <p>Technology leader with <span class="text-white font-semibold">9+ years of experience</span> driving digital transformation at the intersection of Investment Banking and scalable engineering.</p>
+                <p>I architect event-driven systems using <span class="text-indigo-400">Kafka</span> and <span class="text-indigo-400">Go</span>, while maintaining a creative edge in UI/UX through <span class="text-cyan-400">React Native</span> and <span class="text-cyan-400">Angular</span>. I bridge the gap between heavy enterprise architecture and high-performance modern execution.</p>
             </div>
         </section>
 
-        <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 sm:p-8 hover:shadow-md transition-shadow">
-            <h2 class="text-2xl font-bold text-dark border-b-2 border-brand pb-2 mb-6 flex items-center gap-3">
-                <i class="fas fa-code text-brand"></i> Technical Skills
+        <section>
+            <h2 class="text-sm font-black uppercase tracking-[0.2em] text-indigo-400 mb-8 px-4 flex items-center gap-3">
+                <span class="w-8 h-[1px] bg-indigo-500"></span> Tech Stack
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                
-                <div>
-                    <h3 class="font-semibold text-slate-800 mb-3 flex items-center gap-2"><i class="fas fa-globe text-slate-400"></i> Languages & Web</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <h3 class="text-white font-bold mb-4 flex items-center gap-2"><i class="fas fa-terminal text-indigo-400"></i> Backend</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">Java</span>
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">Go</span>
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">JavaScript</span>
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">TypeScript</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-bold rounded-lg border border-slate-700">Java</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-bold rounded-lg border border-slate-700">Go</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-bold rounded-lg border border-slate-700">Microservices</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-bold rounded-lg border border-slate-700">Kafka</span>
                     </div>
                 </div>
-
-                <div>
-                    <h3 class="font-semibold text-slate-800 mb-3 flex items-center gap-2"><i class="fas fa-mobile-screen text-slate-400"></i> Frontend & Mobile</h3>
+                <div class="glass p-6 rounded-2xl hover:bg-white/5 transition-colors">
+                    <h3 class="text-white font-bold mb-4 flex items-center gap-2"><i class="fas fa-layer-group text-cyan-400"></i> Frontend</h3>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">Angular</span>
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">React Native</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-bold rounded-lg border border-slate-700">React Native</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-bold rounded-lg border border-slate-700">Angular</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs font-bold rounded-lg border border-slate-700">TypeScript</span>
                     </div>
                 </div>
-
-                <div>
-                    <h3 class="font-semibold text-slate-800 mb-3 flex items-center gap-2"><i class="fas fa-server text-slate-400"></i> Backend & Architecture</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">Microservices</span>
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">Kafka</span>
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">Express.js</span>
-                    </div>
-                </div>
-
-                <div>
-                    <h3 class="font-semibold text-slate-800 mb-3 flex items-center gap-2"><i class="fas fa-cloud text-slate-400"></i> Cloud & DevOps</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">Azure DevOps</span>
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">OpenShift</span>
-                        <span class="px-3 py-1 bg-blue-50 text-brand text-xs font-bold rounded-full border border-blue-100">Azure AI/ML</span>
-                    </div>
-                </div>
-
             </div>
         </section>
 
-        <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 sm:p-8 hover:shadow-md transition-shadow">
-            <h2 class="text-2xl font-bold text-dark border-b-2 border-brand pb-2 mb-6 flex items-center gap-3">
-                <i class="fas fa-briefcase text-brand"></i> Professional Experience
+        <section class="space-y-8">
+            <h2 class="text-sm font-black uppercase tracking-[0.2em] text-indigo-400 flex items-center gap-3 px-4">
+                <span class="w-8 h-[1px] bg-indigo-500"></span> Experience
             </h2>
             
-            <div class="space-y-8">
-                <div class="relative border-l-2 border-slate-200 pl-6 pb-2">
-                    <div class="absolute w-3 h-3 bg-brand rounded-full -left-[7px] top-2"></div>
-                    <h3 class="text-xl font-bold text-dark">Assistant Vice President (AVP) - Investment Banking Tech</h3>
-                    <div class="flex flex-wrap items-center gap-2 text-sm text-slate-500 font-medium mb-3 mt-1">
-                        <span class="flex items-center gap-1"><i class="fas fa-building"></i> Citi</span>
-                        <span>&bull;</span>
-                        <span class="flex items-center gap-1"><i class="fas fa-map-marker-alt"></i> Bangalore, KA</span>
-                        <span>&bull;</span>
-                        <span class="flex items-center gap-1 text-brand"><i class="fas fa-calendar-alt"></i> Present</span>
+            <div class="space-y-6">
+                <div class="glass p-8 rounded-3xl relative group">
+                    <div class="absolute -left-2 top-10 w-1 h-12 bg-indigo-500 rounded-full shadow-[0_0_15px_#6366f1]"></div>
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white group-hover:text-indigo-400 transition-colors">Assistant Vice President</h3>
+                            <p class="text-indigo-400 font-medium">Citi • Investment Banking Tech</p>
+                        </div>
+                        <span class="text-xs font-black bg-indigo-500/20 text-indigo-300 px-3 py-1 rounded-full mt-2 md:mt-0">PRESENT</span>
                     </div>
-                    <ul class="list-disc list-inside text-slate-600 space-y-2 marker:text-slate-400">
-                        <li>Leading the development of a complex Deal Origination System, orchestrating end-to-end M&A workflows to manage diverse stakeholder requirements during mergers and acquisitions.</li>
-                        <li>Architect robust event-streaming solutions using <strong>Microservices and Kafka</strong> to ensure low-latency data processing across fragmented deal pipelines.</li>
-                        <li>Manage complex containerized deployments via <strong>OpenShift</strong>, optimizing platform availability and system performance.</li>
+                    <ul class="space-y-3 text-slate-400 font-light">
+                        <li class="flex gap-3"><span class="text-indigo-500">▹</span> Leading Deal Origination System architecture for global M&A workflows.</li>
+                        <li class="flex gap-3"><span class="text-indigo-500">▹</span> Implementing low-latency event streaming with Kafka.</li>
+                        <li class="flex gap-3"><span class="text-indigo-500">▹</span> Orchestrating enterprise container deployments via OpenShift.</li>
                     </ul>
                 </div>
 
-                <div class="relative border-l-2 border-slate-200 pl-6 pb-2">
-                    <div class="absolute w-3 h-3 bg-slate-300 rounded-full -left-[7px] top-2"></div>
-                    <h3 class="text-xl font-bold text-dark">Senior Full-Stack Developer</h3>
-                    <div class="flex flex-wrap items-center gap-2 text-sm text-slate-500 font-medium mb-3 mt-1">
-                        <span class="flex items-center gap-1"><i class="fas fa-building"></i> weSure India</span>
-                        <span>&bull;</span>
-                        <span class="flex items-center gap-1"><i class="fas fa-map-marker-alt"></i> Bangalore, KA</span>
-                        <span>&bull;</span>
-                        <span class="flex items-center gap-1"><i class="fas fa-calendar-alt"></i> 2023 - 2024</span>
+                <div class="glass p-8 rounded-3xl opacity-80 hover:opacity-100 transition-opacity">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Senior Full-Stack Developer</h3>
+                            <p class="text-slate-400 font-medium">weSure India</p>
+                        </div>
+                        <span class="text-xs font-bold text-slate-500 mt-2 md:mt-0 uppercase tracking-widest">2023 — 2024</span>
                     </div>
-                    <ul class="list-disc list-inside text-slate-600 space-y-2 marker:text-slate-400">
-                        <li>Led full-stack development for B2B/B2C insurance platforms, integrating core system workflows.</li>
-                        <li>Architected AI solutions using <strong>Azure AI/ML</strong>, including computer vision models for damage detection and document processing.</li>
-                    </ul>
+                    <p class="text-slate-400 font-light italic mb-4">Focus: AI-driven insurance platforms and computer vision integration.</p>
                 </div>
             </div>
         </section>
 
-        <section class="bg-white rounded-xl shadow-sm border border-slate-200 p-6 sm:p-8 hover:shadow-md transition-shadow">
-            <h2 class="text-2xl font-bold text-dark border-b-2 border-brand pb-2 mb-6 flex items-center gap-3">
-                <i class="fas fa-laptop-code text-brand"></i> Featured Projects
+        <section>
+            <h2 class="text-sm font-black uppercase tracking-[0.2em] text-indigo-400 mb-8 px-4 flex items-center gap-3">
+                <span class="w-8 h-[1px] bg-indigo-500"></span> Featured Labs
             </h2>
-            
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 flex flex-col h-full hover:border-brand transition-colors">
-                    <h3 class="text-lg font-bold text-dark mb-2">Rule Management System</h3>
-                    <div class="flex gap-2 mb-3">
-                        <span class="px-2 py-0.5 bg-white text-slate-600 text-xs font-semibold rounded border border-slate-200 shadow-sm"><i class="fa-brands fa-golang text-blue-500 mr-1"></i>Go</span>
-                        <span class="px-2 py-0.5 bg-white text-slate-600 text-xs font-semibold rounded border border-slate-200 shadow-sm"><i class="fa-brands fa-react text-cyan-500 mr-1"></i>React Native</span>
+                <div class="glass p-1 rounded-3xl transition-transform hover:-translate-y-2">
+                    <div class="bg-slate-900/40 rounded-[calc(1.5rem-1px)] p-6 h-full flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">Rule Management System</h3>
+                        <p class="text-slate-400 text-sm font-light mb-6 flex-grow">Decoupled business logic engine built with Go and React Native for extreme performance.</p>
+                        <a href="#" class="flex items-center justify-between text-indigo-400 font-bold text-sm group">
+                            Explore Repository <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                        </a>
                     </div>
-                    <p class="text-sm text-slate-600 flex-grow mb-4">Engineered a high-performance, rule-based processing engine designed to decouple business logic from core application services. Includes a cross-platform mobile interface.</p>
-                    <a href="https://github.com/prithvirajv06/rule-management-system" target="_blank" class="inline-flex items-center justify-center gap-2 w-full px-4 py-2 bg-dark text-white text-sm font-semibold rounded-md hover:bg-brand transition-colors mt-auto">
-                        <i class="fab fa-github"></i> View Repository
-                    </a>
                 </div>
-
-                <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 flex flex-col h-full hover:border-brand transition-colors">
-                    <h3 class="text-lg font-bold text-dark mb-2">Dental Clinic Marketing</h3>
-                    <div class="flex gap-2 mb-3">
-                        <span class="px-2 py-0.5 bg-white text-slate-600 text-xs font-semibold rounded border border-slate-200 shadow-sm"><i class="fa-brands fa-angular text-red-600 mr-1"></i>Angular</span>
-                        <span class="px-2 py-0.5 bg-white text-slate-600 text-xs font-semibold rounded border border-slate-200 shadow-sm"><i class="fa-brands fa-node-js text-green-600 mr-1"></i>Express.js</span>
+                <div class="glass p-1 rounded-3xl transition-transform hover:-translate-y-2">
+                    <div class="bg-slate-900/40 rounded-[calc(1.5rem-1px)] p-6 h-full flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-2">Nimbus UTA</h3>
+                        <p class="text-slate-400 text-sm font-light mb-6 flex-grow">Microservices utility layer using Go and Express for high-concurrency data handling.</p>
+                        <a href="#" class="flex items-center justify-between text-cyan-400 font-bold text-sm group">
+                            Explore Repository <i class="fas fa-arrow-right group-hover:translate-x-2 transition-transform"></i>
+                        </a>
                     </div>
-                    <p class="text-sm text-slate-600 flex-grow mb-4">Built a full-stack marketing portal integrating a responsive Angular frontend with a robust Express.js backend. Implemented RESTful API services to handle client leads.</p>
-                    <a href="https://github.com/prithvirajv06/dental-clinic-marketing" target="_blank" class="inline-flex items-center justify-center gap-2 w-full px-4 py-2 bg-dark text-white text-sm font-semibold rounded-md hover:bg-brand transition-colors mt-auto">
-                        <i class="fab fa-github"></i> View Repository
-                    </a>
-                </div>
-
-                <div class="bg-slate-50 border border-slate-200 rounded-lg p-5 flex flex-col h-full hover:border-brand transition-colors md:col-span-2 lg:col-span-1">
-                    <h3 class="text-lg font-bold text-dark mb-2">Nimbus UTA</h3>
-                    <div class="flex gap-2 mb-3">
-                        <span class="px-2 py-0.5 bg-white text-slate-600 text-xs font-semibold rounded border border-slate-200 shadow-sm"><i class="fa-brands fa-golang text-blue-500 mr-1"></i>Go</span>
-                        <span class="px-2 py-0.5 bg-white text-slate-600 text-xs font-semibold rounded border border-slate-200 shadow-sm"><i class="fa-brands fa-node-js text-green-600 mr-1"></i>Express.js</span>
-                    </div>
-                    <p class="text-sm text-slate-600 flex-grow mb-4">Developed a microservices-oriented utility application using Go for optimized backend processing, integrated with an Express.js API layer to demonstrate scalable design.</p>
-                    <a href="https://github.com/prithvirajv06/nimbus-uta" target="_blank" class="inline-flex items-center justify-center gap-2 w-full px-4 py-2 bg-dark text-white text-sm font-semibold rounded-md hover:bg-brand transition-colors mt-auto">
-                        <i class="fab fa-github"></i> View Repository
-                    </a>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-dark text-slate-400 py-8 text-center border-t border-slate-800">
-        <p class="text-sm">&copy; 2026 Prithviraj V. Built with Tailwind CSS & FontAwesome.</p>
+    <footer class="py-12 text-center border-t border-white/5">
+        <p class="text-slate-500 text-sm font-medium tracking-widest uppercase">
+            &copy; 2026 PRITHVIRAJ V <span class="mx-2">/</span> BUILT FOR THE FUTURE
+        </p>
     </footer>
 
 </body>
