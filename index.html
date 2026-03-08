@@ -1,464 +1,453 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Prithviraj V | Full-Stack Architect</title>
+    <title>Prithviraj V | Full-Stack Architect</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
-<script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-<script>
-tailwind.config = {
-theme:{
-extend:{
-colors:{
-brand:"#2563eb",
-dark:"#020617"
-}
-}
-}
-}
-</script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: "#2563eb",
+                        dark: "#020617"
+                    }
+                }
+            }
+        }
+    </script>
 
-<style>
-html{scroll-behavior:smooth}
+    <style>
+        html {
+            scroll-behavior: smooth
+        }
 
-.skill{
-padding:6px 12px;
-background:#eff6ff;
-color:#2563eb;
-border-radius:999px;
-font-size:12px;
-font-weight:600;
-}
+        .skill {
+            padding: 6px 12px;
+            background: #eff6ff;
+            color: #2563eb;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+        }
 
-.section-card{
-background:white;
-border-radius:10px;
-padding:40px;
-border:1px solid #e2e8f0;
-box-shadow:0 1px 3px rgba(0,0,0,0.05);
-}
-
-</style>
+        .section-card {
+            background: white;
+            border-radius: 10px;
+            padding: 40px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 
 </head>
 
 <body class="bg-slate-50 text-slate-800 font-sans">
 
-<!-- HERO -->
+    <!-- HERO -->
 
-<header class="bg-dark text-white py-24 px-6">
+    <header class="bg-dark text-white py-24 px-6">
 
-<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-<div>
+            <div>
 
-<h1 class="text-5xl font-bold mb-6">
-Prithviraj V
-</h1>
+                <h1 class="text-5xl font-bold mb-6">
+                    Prithviraj V
+                </h1>
 
-<p class="text-xl text-slate-300 mb-6">
-<span id="typing"></span>
-</p>
+                <p class="text-xl text-slate-300 mb-6">
+                    <span id="typing"></span>
+                </p>
 
-<p class="text-slate-400 leading-relaxed mb-8">
-Technology leader with 9+ years of experience designing scalable enterprise
-platforms across Investment Banking and Insurance domains. I specialize in
-microservices architecture, distributed systems, event-driven platforms, and
-cloud-native deployments.
-</p>
+                <p class="text-slate-400 leading-relaxed mb-8">
+                    Technology leader with 9+ years of experience designing scalable enterprise
+                    platforms across Investment Banking and Insurance domains. I specialize in
+                    microservices architecture, distributed systems, event-driven platforms, and
+                    cloud-native deployments.
+                </p>
 
-<div class="flex gap-4">
+                <div class="flex gap-4">
 
-<a href="mailto:prithvirajv@outlook.com"
-class="bg-brand px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-Contact </a>
+                    <a href="mailto:prithvirajv@outlook.com"
+                        class="bg-brand px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                        Contact </a>
 
-<a href="https://github.com/prithvirajv06"
-target="_blank"
-class="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-800 transition">
-GitHub </a>
+                    <a href="https://github.com/prithvirajv06" target="_blank"
+                        class="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-800 transition">
+                        GitHub </a>
 
-<a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/"
-target="_blank"
-class="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-800 transition">
-LinkedIn </a>
+                    <a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/" target="_blank"
+                        class="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-800 transition">
+                        LinkedIn </a>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-<div class="hidden md:flex justify-center">
+            <div class="hidden md:flex justify-center">
 
-<div class="bg-slate-900 p-6 rounded-xl shadow-lg w-80 font-mono text-sm">
+                <div class="bg-slate-900 p-6 rounded-xl shadow-lg w-80 font-mono text-sm">
 
-<p class="text-green-400">$ whoami</p>
-<p class="text-white mb-4">Prithviraj V</p>
+                    <p class="text-green-400">$ whoami</p>
+                    <p class="text-white mb-4">Prithviraj V</p>
 
-<p class="text-green-400">$ role</p>
-<p class="text-white mb-4">Assistant Vice President</p>
+                    <p class="text-green-400">$ role</p>
+                    <p class="text-white mb-4">Assistant Vice President</p>
 
-<p class="text-green-400">$ focus</p>
-<p class="text-white mb-4">
-Microservices • Event Driven Systems
-</p>
+                    <p class="text-green-400">$ focus</p>
+                    <p class="text-white mb-4">
+                        Microservices • Event Driven Systems
+                    </p>
 
-<p class="text-green-400">$ stack</p>
-<p class="text-white">
-Go | Java | Angular | Kafka | OpenShift
-</p>
+                    <p class="text-green-400">$ stack</p>
+                    <p class="text-white">
+                        Go | Java | Angular | Kafka | OpenShift
+                    </p>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</header>
+    </header>
 
-<!-- MAIN -->
+    <!-- MAIN -->
 
-<main class="max-w-6xl mx-auto px-6 py-20 space-y-20">
+    <main class="max-w-6xl mx-auto px-6 py-20 space-y-20">
 
-<!-- ENGINEERING PHILOSOPHY -->
+        <!-- ENGINEERING PHILOSOPHY -->
 
-<section class="section-card">
+        <section class="section-card">
 
-<h2 class="text-3xl font-bold mb-6">
-Engineering Philosophy
-</h2>
+            <h2 class="text-3xl font-bold mb-6">
+                Engineering Philosophy
+            </h2>
 
-<p class="text-slate-600 leading-relaxed">
-I focus on designing scalable systems using microservices and event-driven
-architecture. My goal is to build platforms where business logic is modular,
-deployments are resilient, and systems can evolve independently.
-</p>
+            <p class="text-slate-600 leading-relaxed">
+                I focus on designing scalable systems using microservices and event-driven
+                architecture. My goal is to build platforms where business logic is modular,
+                deployments are resilient, and systems can evolve independently.
+            </p>
 
-<ul class="list-disc ml-6 mt-4 text-slate-600 space-y-2">
+            <ul class="list-disc ml-6 mt-4 text-slate-600 space-y-2">
 
-<li>Domain-driven microservices design</li>
-<li>Event streaming architecture using Kafka</li>
-<li>Rule engines to decouple business logic</li>
-<li>Cloud-native deployments using containers</li>
-<li>Scalable distributed systems</li>
+                <li>Domain-driven microservices design</li>
+                <li>Event streaming architecture using Kafka</li>
+                <li>Rule engines to decouple business logic</li>
+                <li>Cloud-native deployments using containers</li>
+                <li>Scalable distributed systems</li>
 
-</ul>
+            </ul>
 
-</section>
+        </section>
 
-<!-- TECH SKILLS -->
+        <!-- TECH SKILLS -->
 
-<section class="section-card">
+        <section class="section-card">
 
-<h2 class="text-3xl font-bold mb-8">
-Technical Expertise
-</h2>
+            <h2 class="text-3xl font-bold mb-8">
+                Technical Expertise
+            </h2>
 
-<div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
 
-<div>
+                <div>
 
-<h3 class="font-semibold mb-4">Languages</h3>
+                    <h3 class="font-semibold mb-4">Languages</h3>
 
-<div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2">
 
-<span class="skill">Java</span> <span class="skill">Go</span> <span class="skill">JavaScript</span> <span class="skill">TypeScript</span>
+                        <span class="skill">Java</span> <span class="skill">Go</span> <span
+                            class="skill">JavaScript</span> <span class="skill">TypeScript</span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-<div>
+                <div>
 
-<h3 class="font-semibold mb-4">Frontend</h3>
+                    <h3 class="font-semibold mb-4">Frontend</h3>
 
-<div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2">
 
-<span class="skill">Angular</span> <span class="skill">React Native</span>
+                        <span class="skill">Angular</span> <span class="skill">React Native</span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-<div>
+                <div>
 
-<h3 class="font-semibold mb-4">Architecture</h3>
+                    <h3 class="font-semibold mb-4">Architecture</h3>
 
-<div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2">
 
-<span class="skill">Microservices</span> <span class="skill">Kafka</span> <span class="skill">REST APIs</span> <span class="skill">Event Driven</span>
+                        <span class="skill">Microservices</span> <span class="skill">Kafka</span> <span
+                            class="skill">REST APIs</span> <span class="skill">Event Driven</span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-<div>
+                <div>
 
-<h3 class="font-semibold mb-4">Cloud / DevOps</h3>
+                    <h3 class="font-semibold mb-4">Cloud / DevOps</h3>
 
-<div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2">
 
-<span class="skill">Docker</span> <span class="skill">Kubernetes</span> <span class="skill">OpenShift</span> <span class="skill">Azure DevOps</span>
+                        <span class="skill">Docker</span> <span class="skill">Kubernetes</span> <span
+                            class="skill">OpenShift</span> <span class="skill">Azure DevOps</span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-<div>
+                <div>
 
-<h3 class="font-semibold mb-4">AI / Data</h3>
+                    <h3 class="font-semibold mb-4">AI / Data</h3>
 
-<div class="flex flex-wrap gap-2">
+                    <div class="flex flex-wrap gap-2">
 
-<span class="skill">Azure AI</span> <span class="skill">Machine Learning</span> <span class="skill">Computer Vision</span>
+                        <span class="skill">Azure AI</span> <span class="skill">Machine Learning</span> <span
+                            class="skill">Computer Vision</span>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</section>
+        </section>
 
-<!-- ARCHITECTURE APPROACH -->
+        <!-- ARCHITECTURE APPROACH -->
 
-<section class="section-card">
+        <section class="section-card">
 
-<h2 class="text-3xl font-bold mb-6">
-Architecture Approach
-</h2>
+            <h2 class="text-3xl font-bold mb-6">
+                Architecture Approach
+            </h2>
 
-<p class="text-slate-600 mb-4">
-Typical architecture used across my enterprise projects:
-</p>
+            <p class="text-slate-600 mb-4">
+                Typical architecture used across my enterprise projects:
+            </p>
 
-<ul class="list-disc ml-6 text-slate-600 space-y-2">
+            <ul class="list-disc ml-6 text-slate-600 space-y-2">
 
-<li>API Gateway managing client communication</li>
-<li>Microservices handling domain logic</li>
-<li>Kafka event streaming for asynchronous workflows</li>
-<li>Rule engine layer for dynamic business logic</li>
-<li>Container orchestration using OpenShift</li>
+                <li>API Gateway managing client communication</li>
+                <li>Microservices handling domain logic</li>
+                <li>Kafka event streaming for asynchronous workflows</li>
+                <li>Rule engine layer for dynamic business logic</li>
+                <li>Container orchestration using OpenShift</li>
 
-</ul>
+            </ul>
 
-</section>
+        </section>
 
-<!-- EXPERIENCE -->
+        <!-- EXPERIENCE -->
 
-<section class="section-card">
+        <section class="section-card">
 
-<h2 class="text-3xl font-bold mb-8">
-Professional Experience
-</h2>
+            <h2 class="text-3xl font-bold mb-8">
+                Professional Experience
+            </h2>
 
-<div class="space-y-8">
+            <div class="space-y-8">
 
-<div>
+                <div>
 
-<h3 class="text-xl font-semibold">
-Assistant Vice President — Citi
-</h3>
+                    <h3 class="text-xl font-semibold">
+                        Assistant Vice President — Citi
+                    </h3>
 
-<p class="text-sm text-slate-500 mb-4">
-Investment Banking Technology | Bangalore
-</p>
+                    <p class="text-sm text-slate-500 mb-4">
+                        Investment Banking Technology | Bangalore
+                    </p>
 
-<ul class="list-disc ml-6 text-slate-600 space-y-2">
+                    <ul class="list-disc ml-6 text-slate-600 space-y-2">
 
-<li>Leading development of deal origination platforms for M&A workflows.</li>
+                        <li>Leading development of deal origination platforms for M&A workflows.</li>
 
-<li>Architecting event-driven microservices using Kafka.</li>
+                        <li>Architecting event-driven microservices using Kafka.</li>
 
-<li>Managing large-scale container deployments using OpenShift.</li>
+                        <li>Managing large-scale container deployments using OpenShift.</li>
 
-</ul>
+                    </ul>
 
-</div>
+                </div>
 
-<div>
+                <div>
 
-<h3 class="text-xl font-semibold">
-Senior Full-Stack Developer — weSure
-</h3>
+                    <h3 class="text-xl font-semibold">
+                        Senior Full-Stack Developer — weSure
+                    </h3>
 
-<p class="text-sm text-slate-500 mb-4">
-Insurance Technology Platform
-</p>
+                    <p class="text-sm text-slate-500 mb-4">
+                        Insurance Technology Platform
+                    </p>
 
-<ul class="list-disc ml-6 text-slate-600 space-y-2">
+                    <ul class="list-disc ml-6 text-slate-600 space-y-2">
 
-<li>Developed B2B and B2C insurance platforms.</li>
+                        <li>Developed B2B and B2C insurance platforms.</li>
 
-<li>Implemented AI solutions using Azure ML and computer vision.</li>
+                        <li>Implemented AI solutions using Azure ML and computer vision.</li>
 
-</ul>
+                    </ul>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</section>
+        </section>
 
-<!-- PROJECTS -->
+        <!-- PROJECTS -->
 
-<section class="section-card">
+        <section class="section-card">
 
-<h2 class="text-3xl font-bold mb-10">
-Featured Projects
-</h2>
+            <h2 class="text-3xl font-bold mb-10">
+                Featured Projects
+            </h2>
 
-<div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-8">
 
-<div>
+                <div>
 
-<h3 class="font-semibold text-lg mb-2">
-Rule Management System
-</h3>
+                    <h3 class="font-semibold text-lg mb-2">
+                        Rule Management System
+                    </h3>
 
-<p class="text-sm text-slate-600 mb-3">
-A scalable rule engine built using Go that separates business logic from
-core application services.
-</p>
+                    <p class="text-sm text-slate-600 mb-3">
+                        A scalable rule engine built using Go that separates business logic from
+                        core application services.
+                    </p>
 
-<ul class="text-sm text-slate-600 list-disc ml-4 mb-3">
+                    <ul class="text-sm text-slate-600 list-disc ml-4 mb-3">
 
-<li>Dynamic rule evaluation engine</li>
-<li>REST API for rule execution</li>
-<li>Mobile interface using React Native</li>
+                        <li>Dynamic rule evaluation engine</li>
+                        <li>REST API for rule execution</li>
+                        <li>Mobile interface using React Native</li>
 
-</ul>
+                    </ul>
 
-<a href="https://github.com/prithvirajv06/rule-management-system"
-target="_blank"
-class="text-brand font-semibold">
-View Repository → </a>
+                    <a href="https://github.com/prithvirajv06/rule-management-system" target="_blank"
+                        class="text-brand font-semibold">
+                        View Repository → </a>
 
-</div>
+                </div>
 
-<div>
+                <div>
 
-<h3 class="font-semibold text-lg mb-2">
-Dental Clinic Marketing
-</h3>
+                    <h3 class="font-semibold text-lg mb-2">
+                        Dental Clinic Marketing
+                    </h3>
 
-<p class="text-sm text-slate-600 mb-3">
-Angular + Express full stack platform designed to manage marketing leads
-for clinics.
-</p>
+                    <p class="text-sm text-slate-600 mb-3">
+                        Angular + Express full stack platform designed to manage marketing leads
+                        for clinics.
+                    </p>
 
-<ul class="text-sm text-slate-600 list-disc ml-4 mb-3">
+                    <ul class="text-sm text-slate-600 list-disc ml-4 mb-3">
 
-<li>Angular frontend</li>
-<li>Node.js REST API</li>
-<li>Lead capture system</li>
+                        <li>Angular frontend</li>
+                        <li>Node.js REST API</li>
+                        <li>Lead capture system</li>
 
-</ul>
+                    </ul>
 
-<a href="https://github.com/prithvirajv06/dental-clinic-marketing"
-target="_blank"
-class="text-brand font-semibold">
-View Repository → </a>
+                    <a href="https://github.com/prithvirajv06/dental-clinic-marketing" target="_blank"
+                        class="text-brand font-semibold">
+                        View Repository → </a>
 
-</div>
+                </div>
 
-<div>
+                <div>
 
-<h3 class="font-semibold text-lg mb-2">
-Nimbus UTA
-</h3>
+                    <h3 class="font-semibold text-lg mb-2">
+                        Nimbus UTA
+                    </h3>
 
-<p class="text-sm text-slate-600 mb-3">
-Utility microservice platform demonstrating scalable backend
-architecture using Go and Express.
-</p>
+                    <p class="text-sm text-slate-600 mb-3">
+                        Utility microservice platform demonstrating scalable backend
+                        architecture using Go and Express.
+                    </p>
 
-<ul class="text-sm text-slate-600 list-disc ml-4 mb-3">
+                    <ul class="text-sm text-slate-600 list-disc ml-4 mb-3">
 
-<li>Microservice architecture</li>
-<li>REST API integration</li>
-<li>Containerized services</li>
+                        <li>Microservice architecture</li>
+                        <li>REST API integration</li>
+                        <li>Containerized services</li>
 
-</ul>
+                    </ul>
 
-<a href="https://github.com/prithvirajv06/nimbus-uta"
-target="_blank"
-class="text-brand font-semibold">
-View Repository → </a>
+                    <a href="https://github.com/prithvirajv06/nimbus-uta" target="_blank"
+                        class="text-brand font-semibold">
+                        View Repository → </a>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</section>
+        </section>
 
-<!-- GITHUB -->
+    </main>
 
-<section class="text-center">
+    <!-- FOOTER -->
 
-<h2 class="text-3xl font-bold mb-10">
-GitHub Activity
-</h2>
+    <footer class="bg-dark text-slate-400 py-8 text-center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=prithvirajv06&show_icons=true&theme=default">
+        <p>© 2026 Prithviraj V</p>
 
-</section>
+        <div class="flex justify-center gap-6 mt-4 text-xl">
 
-</main>
+            <a href="https://github.com/prithvirajv06">
+                <i class="fab fa-github"></i>
+            </a>
 
-<!-- FOOTER -->
+            <a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/">
+                <i class="fab fa-linkedin"></i>
+            </a>
 
-<footer class="bg-dark text-slate-400 py-8 text-center">
+        </div>
 
-<p>© 2026 Prithviraj V</p>
+    </footer>
 
-<div class="flex justify-center gap-6 mt-4 text-xl">
+    <script>
 
-<a href="https://github.com/prithvirajv06">
-<i class="fab fa-github"></i>
-</a>
+        new Typed("#typing", {
+            strings: [
+                "Assistant Vice President",
+                "Full-Stack Architect",
+                "Microservices Specialist",
+                "Distributed Systems Engineer"
+            ],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        })
 
-<a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/">
-<i class="fab fa-linkedin"></i>
-</a>
+        ScrollReveal().reveal(".section-card", {
+            distance: "40px",
+            duration: 800,
+            origin: "bottom",
+            interval: 200
+        })
 
-</div>
-
-</footer>
-
-<script>
-
-new Typed("#typing",{
-strings:[
-"Assistant Vice President",
-"Full-Stack Architect",
-"Microservices Specialist",
-"Distributed Systems Engineer"
-],
-typeSpeed:60,
-backSpeed:40,
-loop:true
-})
-
-ScrollReveal().reveal(".section-card",{
-distance:"40px",
-duration:800,
-origin:"bottom",
-interval:200
-})
-
-</script>
+    </script>
 
 </body>
+
 </html>
