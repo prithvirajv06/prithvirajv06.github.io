@@ -3,216 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prithviraj V | Tech Leader & Architect</title>
+    <title>Prithviraj V | AVP & Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
-        
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: #f8fafc;
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        accent: '#6366f1', // Electric Indigo
+                        surface: '#ffffff',
+                        body: '#f8fafc',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
         }
-
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        body { background-color: #f8fafc; color: #1e293b; }
+        
         .bento-card {
+            background: white;
+            border: 1px solid #e2e8f0;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 1px solid rgba(226, 232, 240, 0.8);
         }
 
         .bento-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
             border-color: #6366f1;
-        }
-
-        .glass-nav {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05);
+            transform: translateY(-2px);
         }
 
         .gradient-border {
             position: relative;
+            background: white;
+            border-radius: 1rem;
         }
 
         .gradient-border::after {
             content: '';
             position: absolute;
-            bottom: 0; left: 0; width: 100%; height: 2px;
-            background: linear-gradient(90deg, #6366f1, #06b6d4);
+            inset: -1px;
+            background: linear-gradient(to right, #6366f1, #a855f7);
+            z-index: -1;
+            border-radius: 1.1rem;
+            opacity: 0;
+            transition: opacity 0.3s;
         }
+
+        .gradient-border:hover::after { opacity: 1; }
     </style>
 </head>
-<body class="text-slate-900 selection:bg-indigo-100">
+<body class="antialiased">
 
-    <nav class="sticky top-0 z-50 glass-nav border-b border-slate-200/50 px-6 py-4">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <span class="font-extrabold text-xl tracking-tight text-slate-900">P<span class="text-indigo-600">V</span>.</span>
-            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-600 uppercase tracking-widest">
-                <a href="#about" class="hover:text-indigo-600 transition-colors">About</a>
-                <a href="#experience" class="hover:text-indigo-600 transition-colors">Experience</a>
-                <a href="#projects" class="hover:text-indigo-600 transition-colors">Projects</a>
-            </div>
-            <a href="mailto:prithvirajv@outlook.com" class="bg-slate-900 text-white px-5 py-2.5 rounded-full text-sm font-bold hover:bg-indigo-600 transition-all shadow-lg shadow-indigo-200">
-                Let's Talk
-            </a>
+    <nav class="max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="text-xl font-black tracking-tighter italic">P<span class="text-accent">.</span>V</div>
+        <div class="flex gap-6 text-sm font-medium text-slate-500 uppercase tracking-widest">
+            <a href="mailto:prithvirajv@outlook.com" class="hover:text-accent transition-colors">Contact</a>
+            <a href="https://github.com/prithvirajv06" class="hover:text-accent transition-colors">Code</a>
         </div>
     </nav>
 
-    <main class="max-w-6xl mx-auto px-6 py-12 md:py-20">
-        
-        <header class="mb-20">
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-bold mb-6">
-                <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-                </span>
-                AVP @ CITI • STARTUP FOUNDER
-            </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 tracking-tight mb-6">
-                Engineering for <br/> <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-cyan-500">Scale and Impact.</span>
+    <header class="max-w-5xl mx-auto px-6 pt-12 pb-20">
+        <div class="max-w-3xl">
+            <h1 class="text-6xl font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.1]">
+                Engineering <span class="text-accent">Systems</span> for the Global Market.
             </h1>
-            <p class="text-xl text-slate-500 max-w-2xl leading-relaxed font-medium">
-                I lead high-performance engineering teams at Citi and architect modern software ecosystems at my startup. Bridging the gap between 
-                <span class="text-slate-900">Investment Banking rigor</span> and <span class="text-slate-900">Startup agility</span>.
+            <p class="text-xl text-slate-600 leading-relaxed mb-8">
+                Assistant Vice President at <span class="text-slate-900 font-semibold underline decoration-accent decoration-2 underline-offset-4">Citi</span>. 
+                Full-stack architect specializing in high-concurrency Microservices and M&A technology.
             </p>
-        </header>
-
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-            
-            <div id="about" class="md:col-span-8 bento-card bg-white rounded-3xl p-8 sm:p-10">
-                <h2 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-6">Professional Philosophy</h2>
-                <div class="space-y-4 text-lg text-slate-600 leading-relaxed font-light">
-                    <p>With over <span class="text-slate-900 font-semibold">9 years of experience</span>, I specialize in transforming complex business requirements into elegant, scalable microservices architectures.</p>
-                    <p>My current focus is on <span class="text-indigo-600 font-medium">Event-Driven Architecture</span> and <span class="text-indigo-600 font-medium">Full-Stack Mobile Ecosystems</span>. Whether it's managing M&A pipelines at a global bank or building car-wash automation software, my goal is technical excellence that drives bottom-line growth.</p>
-                </div>
-            </div>
-
-            <div class="md:col-span-4 grid grid-cols-1 gap-6">
-                <a href="https://linkedin.com" target="_blank" class="bento-card bg-indigo-600 text-white rounded-3xl p-8 flex flex-col justify-between hover:bg-indigo-700">
-                    <i class="fab fa-linkedin text-3xl"></i>
-                    <div>
-                        <p class="text-indigo-100 text-sm font-bold uppercase tracking-wider mb-1">LinkedIn</p>
-                        <p class="text-xl font-bold">Connect with me <i class="fas fa-arrow-right ml-2 text-sm"></i></p>
-                    </div>
+            <div class="flex flex-wrap gap-4">
+                <a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/" target="_blank" class="bg-slate-900 text-white px-6 py-3 rounded-full font-bold text-sm hover:bg-accent transition-all shadow-lg shadow-indigo-100">
+                    LinkedIn Profile
                 </a>
-                <a href="https://github.com/prithvirajv06" target="_blank" class="bento-card bg-slate-900 text-white rounded-3xl p-8 flex flex-col justify-between hover:bg-slate-800">
-                    <i class="fab fa-github text-3xl"></i>
-                    <div>
-                        <p class="text-slate-400 text-sm font-bold uppercase tracking-wider mb-1">GitHub</p>
-                        <p class="text-xl font-bold">Review My Code <i class="fas fa-arrow-right ml-2 text-sm"></i></p>
-                    </div>
+                <a href="#projects" class="border border-slate-200 bg-white text-slate-600 px-6 py-3 rounded-full font-bold text-sm hover:border-slate-400 transition-all">
+                    View Portfolio
                 </a>
             </div>
-
-            <div class="md:col-span-12 bento-card bg-white rounded-3xl p-8">
-                <h2 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-8">Technical Proficiency</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                    <div>
-                        <p class="text-sm font-bold text-slate-900 mb-4 border-l-2 border-indigo-500 pl-3">Architecture</p>
-                        <ul class="text-sm text-slate-500 space-y-2 font-medium">
-                            <li>Microservices (Kafka)</li>
-                            <li>Enterprise Design</li>
-                            <li>Cloud Native (OpenShift)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="text-sm font-bold text-slate-900 mb-4 border-l-2 border-cyan-500 pl-3">Languages</p>
-                        <ul class="text-sm text-slate-500 space-y-2 font-medium">
-                            <li>Java & Go</li>
-                            <li>TypeScript & JS</li>
-                            <li>Python (Lead Candidate)</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="text-sm font-bold text-slate-900 mb-4 border-l-2 border-rose-500 pl-3">Frontend</p>
-                        <ul class="text-sm text-slate-500 space-y-2 font-medium">
-                            <li>React Native</li>
-                            <li>Angular (Expert)</li>
-                            <li>Figma Design</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <p class="text-sm font-bold text-slate-900 mb-4 border-l-2 border-amber-500 pl-3">Cloud/Ops</p>
-                        <ul class="text-sm text-slate-500 space-y-2 font-medium">
-                            <li>Azure AI/ML</li>
-                            <li>DevOps Pipelines</li>
-                            <li>Firebase / Firestore</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div id="experience" class="md:col-span-12 bento-card bg-white rounded-3xl p-8 sm:p-10">
-                <h2 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-10">Professional Trajectory</h2>
-                
-                <div class="space-y-12">
-                    <div class="flex flex-col md:flex-row gap-4 md:gap-12">
-                        <div class="md:w-1/4">
-                            <p class="text-indigo-600 font-bold uppercase tracking-widest text-sm">Current</p>
-                            <p class="text-slate-400 text-xs font-bold mt-1">CITI BANK</p>
-                        </div>
-                        <div class="md:w-3/4">
-                            <h3 class="text-2xl font-bold text-slate-900">Assistant Vice President</h3>
-                            <p class="text-slate-500 mt-2 font-medium">Leading the architecture for Deal Origination Systems within Investment Banking. Orchestrating M&A workflows through low-latency Kafka pipelines and containerized OpenShift environments.</p>
-                        </div>
-                    </div>
-
-                    <div class="flex flex-col md:flex-row gap-4 md:gap-12">
-                        <div class="md:w-1/4">
-                            <p class="text-slate-400 font-bold uppercase tracking-widest text-sm">2023 — 2024</p>
-                            <p class="text-slate-400 text-xs font-bold mt-1">WESURE INDIA</p>
-                        </div>
-                        <div class="md:w-3/4">
-                            <h3 class="text-2xl font-bold text-slate-900">Senior Full-Stack Developer</h3>
-                            <p class="text-slate-500 mt-2 font-medium">Modernized insurance platforms via Azure AI/ML integrations for automated damage detection and document processing.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="projects" class="md:col-span-12 pt-8">
-                <h2 class="text-xs font-black uppercase tracking-[0.2em] text-slate-400 mb-8">Featured Systems</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div class="bento-card bg-white rounded-3xl p-8 group">
-                        <div class="w-12 h-12 rounded-2xl bg-indigo-50 flex items-center justify-center mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all">
-                            <i class="fas fa-code-branch"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">Rule Management Engine</h3>
-                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">High-performance processing engine designed to decouple business logic from core application services. Built with Go for 0.1ms latency.</p>
-                        <div class="flex gap-2 mb-6">
-                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-md uppercase tracking-tight">Go</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-md uppercase tracking-tight">React Native</span>
-                        </div>
-                        <a href="#" class="text-slate-900 font-bold text-sm inline-flex items-center group-hover:gap-3 transition-all">View Repo <i class="fas fa-chevron-right ml-2 text-xs"></i></a>
-                    </div>
-
-                    <div class="bento-card bg-white rounded-3xl p-8 group">
-                        <div class="w-12 h-12 rounded-2xl bg-cyan-50 flex items-center justify-center mb-6 group-hover:bg-cyan-600 group-hover:text-white transition-all">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3">GlossPlus Ecosystem</h3>
-                        <p class="text-slate-500 text-sm mb-6 leading-relaxed">A tripartite software solution for automated car wash operations involving customer, worker, and admin interfaces.</p>
-                        <div class="flex gap-2 mb-6">
-                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-md uppercase tracking-tight">Flutter</span>
-                            <span class="px-3 py-1 bg-slate-100 text-slate-600 text-xs font-bold rounded-md uppercase tracking-tight">Firebase</span>
-                        </div>
-                        <a href="#" class="text-slate-900 font-bold text-sm inline-flex items-center group-hover:gap-3 transition-all">Active Startup <i class="fas fa-chevron-right ml-2 text-xs"></i></a>
-                    </div>
-                </div>
-            </div>
-
         </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 space-y-24">
+
+        <section>
+            <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4">
+                <div class="bento-card md:col-span-2 p-8 rounded-3xl">
+                    <span class="text-xs font-bold text-accent uppercase tracking-widest mb-4 block">Core Architecture</span>
+                    <h3 class="text-2xl font-bold mb-4">Scalable Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-50 border border-slate-100 rounded-md text-sm">Java / Spring</span>
+                        <span class="px-3 py-1 bg-slate-50 border border-slate-100 rounded-md text-sm">Go (Golang)</span>
+                        <span class="px-3 py-1 bg-slate-50 border border-slate-100 rounded-md text-sm">Kafka Streams</span>
+                    </div>
+                </div>
+                <div class="bento-card p-8 rounded-3xl">
+                    <div class="h-full flex flex-col justify-between">
+                        <i class="fa-solid fa-cloud-arrow-up text-3xl text-slate-300"></i>
+                        <p class="font-bold">OpenShift & Azure DevOps</p>
+                    </div>
+                </div>
+                <div class="bento-card p-8 rounded-3xl">
+                    <div class="h-full flex flex-col justify-between">
+                        <i class="fa-solid fa-brain text-3xl text-slate-300"></i>
+                        <p class="font-bold">Azure AI/ML Models</p>
+                    </div>
+                </div>
+                <div class="bento-card md:col-span-1 p-8 rounded-3xl">
+                    <div class="h-full flex flex-col justify-between text-center md:text-left">
+                        <p class="text-4xl font-black text-accent">9+</p>
+                        <p class="text-xs uppercase font-bold text-slate-400 tracking-tighter">Years Exp.</p>
+                    </div>
+                </div>
+                <div class="bento-card md:col-span-3 p-8 rounded-3xl">
+                    <h3 class="text-xl font-bold mb-4">Interface & Experience</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="flex items-center gap-2 px-4 py-2 bg-indigo-50 text-accent rounded-xl text-sm font-semibold">
+                            <i class="fa-brands fa-angular"></i> Angular
+                        </span>
+                        <span class="flex items-center gap-2 px-4 py-2 bg-indigo-50 text-accent rounded-xl text-sm font-semibold">
+                            <i class="fa-brands fa-react"></i> React Native
+                        </span>
+                        <span class="flex items-center gap-2 px-4 py-2 bg-indigo-50 text-accent rounded-xl text-sm font-semibold">
+                            <i class="fa-solid fa-code"></i> TypeScript
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12">
+            <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+                Career Path <span class="h-[1px] flex-grow bg-slate-200"></span>
+            </h2>
+            <div class="space-y-16">
+                <div class="relative pl-10 border-l-2 border-slate-100 group">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-white border-4 border-accent shadow-[0_0_10px_rgba(99,102,241,0.3)]"></div>
+                    <div class="flex flex-col md:flex-row md:items-center gap-2 mb-4">
+                        <span class="text-sm font-bold text-accent bg-indigo-50 px-3 py-1 rounded-full uppercase tracking-tighter">Present</span>
+                        <h3 class="text-2xl font-bold">Assistant Vice President</h3>
+                    </div>
+                    <p class="text-slate-900 font-semibold mb-3">Citi • Investment Banking Technology</p>
+                    <p class="text-slate-600 max-w-2xl leading-relaxed">
+                        Orchestrating the development of high-stakes Deal Origination Systems. Focused on low-latency event-driven architecture using <strong>Kafka</strong> and <strong>Microservices</strong> to streamline complex M&A workflows.
+                    </p>
+                </div>
+
+                <div class="relative pl-10 border-l-2 border-slate-100">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-100 border-4 border-slate-300"></div>
+                    <div class="flex flex-col md:flex-row md:items-center gap-2 mb-4">
+                        <span class="text-sm font-bold text-slate-400 border border-slate-200 px-3 py-1 rounded-full uppercase tracking-tighter">2023 — 2024</span>
+                        <h3 class="text-2xl font-bold">Senior Full-Stack Developer</h3>
+                    </div>
+                    <p class="text-slate-900 font-semibold mb-3">weSure India</p>
+                    <p class="text-slate-600 max-w-2xl">
+                        Architected AI-powered insurance solutions, integrating Azure Computer Vision for automated damage detection and claim processing.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="pb-24">
+            <h2 class="text-3xl font-bold mb-8">Selected Labs</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <a href="https://github.com/prithvirajv06/rule-management-system" class="gradient-border group p-8 bento-card rounded-3xl flex flex-col justify-between h-64">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold">Rule Management System</h4>
+                            <i class="fa-brands fa-github text-xl text-slate-300 group-hover:text-accent"></i>
+                        </div>
+                        <p class="text-sm text-slate-500">A high-performance business logic engine decoupled from core services. Built with Go & React Native.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="text-[10px] font-black uppercase tracking-widest text-slate-400">Go</span>
+                        <span class="text-[10px] font-black uppercase tracking-widest text-slate-400">React Native</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/prithvirajv06/nimbus-uta" class="gradient-border group p-8 bento-card rounded-3xl flex flex-col justify-between h-64">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <h4 class="text-xl font-bold">Nimbus UTA</h4>
+                            <i class="fa-brands fa-github text-xl text-slate-300 group-hover:text-accent"></i>
+                        </div>
+                        <p class="text-sm text-slate-500">Utility architecture focusing on micro-service optimization and concurrency management.</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <span class="text-[10px] font-black uppercase tracking-widest text-slate-400">Go</span>
+                        <span class="text-[10px] font-black uppercase tracking-widest text-slate-400">Express.js</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="py-12 px-6 border-t border-slate-200 mt-12 bg-white">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-slate-400 text-sm font-semibold uppercase tracking-widest">&copy; 2026 PRITHVIRAJ VETRIVELU</p>
-            <div class="flex gap-8 text-slate-400">
-                <a href="#" class="hover:text-indigo-600"><i class="fab fa-github"></i></a>
-                <a href="#" class="hover:text-indigo-600"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="hover:text-indigo-600"><i class="fas fa-envelope"></i></a>
+    <footer class="bg-slate-900 text-white py-16">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="text-center md:text-left">
+                <h4 class="text-2xl font-bold mb-2">Let's talk systems.</h4>
+                <p class="text-slate-400">Currently based in Bangalore, KA.</p>
             </div>
+            <div class="flex gap-4">
+                <a href="mailto:prithvirajv@outlook.com" class="w-12 h-12 rounded-full border border-slate-700 flex items-center justify-center hover:bg-accent transition-colors">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://github.com/prithvirajv06" class="w-12 h-12 rounded-full border border-slate-700 flex items-center justify-center hover:bg-accent transition-colors">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto px-6 mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500 font-bold uppercase tracking-[0.3em]">
+            &copy; 2026 Prithviraj V. Engineered for Scale.
         </div>
     </footer>
 
