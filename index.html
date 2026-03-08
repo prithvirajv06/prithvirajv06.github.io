@@ -1,365 +1,464 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Prithviraj V | AVP & Full-Stack Architect</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+<title>Prithviraj V | Full-Stack Architect</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: "#2563eb",
-                        dark: "#020617"
-                    }
-                }
-            }
-        }
-    </script>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <style>
-        html {
-            scroll-behavior: smooth
-        }
-    </style>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+tailwind.config = {
+theme:{
+extend:{
+colors:{
+brand:"#2563eb",
+dark:"#020617"
+}
+}
+}
+}
+</script>
+
+<style>
+html{scroll-behavior:smooth}
+
+.skill{
+padding:6px 12px;
+background:#eff6ff;
+color:#2563eb;
+border-radius:999px;
+font-size:12px;
+font-weight:600;
+}
+
+.section-card{
+background:white;
+border-radius:10px;
+padding:40px;
+border:1px solid #e2e8f0;
+box-shadow:0 1px 3px rgba(0,0,0,0.05);
+}
+
+</style>
 
 </head>
 
 <body class="bg-slate-50 text-slate-800 font-sans">
 
-    <!-- HERO -->
+<!-- HERO -->
 
-    <header class="bg-dark text-white py-24 px-6">
+<header class="bg-dark text-white py-24 px-6">
 
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-            <div>
+<div>
 
-                <h1 class="text-5xl font-bold leading-tight mb-6">
-                    Prithviraj V
-                </h1>
+<h1 class="text-5xl font-bold mb-6">
+Prithviraj V
+</h1>
 
-                <p class="text-xl text-slate-300 mb-6">
-                    <span id="typing"></span>
-                </p>
+<p class="text-xl text-slate-300 mb-6">
+<span id="typing"></span>
+</p>
 
-                <p class="text-slate-400 leading-relaxed mb-8">
-                    Technology leader with 9+ years of experience designing enterprise systems for
-                    Investment Banking and Insurance domains. Specialized in scalable microservices,
-                    event-driven architecture, and distributed systems.
-                </p>
+<p class="text-slate-400 leading-relaxed mb-8">
+Technology leader with 9+ years of experience designing scalable enterprise
+platforms across Investment Banking and Insurance domains. I specialize in
+microservices architecture, distributed systems, event-driven platforms, and
+cloud-native deployments.
+</p>
 
-                <div class="flex gap-4">
+<div class="flex gap-4">
 
-                    <a href="mailto:prithvirajv@outlook.com"
-                        class="bg-brand px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
-                        Contact </a>
+<a href="mailto:prithvirajv@outlook.com"
+class="bg-brand px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+Contact </a>
 
-                    <a href="https://github.com/prithvirajv06" target="_blank"
-                        class="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-800 transition">
-                        GitHub </a>
+<a href="https://github.com/prithvirajv06"
+target="_blank"
+class="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-800 transition">
+GitHub </a>
 
-                </div>
+<a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/"
+target="_blank"
+class="border border-slate-600 px-6 py-3 rounded-lg hover:bg-slate-800 transition">
+LinkedIn </a>
 
-            </div>
+</div>
 
-            <div class="hidden md:flex justify-center">
+</div>
 
-                <div class="bg-slate-900 p-6 rounded-xl shadow-lg w-80">
+<div class="hidden md:flex justify-center">
 
-                    <p class="text-green-400 text-sm mb-2">$ whoami</p>
-                    <p class="text-white mb-4">Prithviraj V</p>
+<div class="bg-slate-900 p-6 rounded-xl shadow-lg w-80 font-mono text-sm">
 
-                    <p class="text-green-400 text-sm mb-2">$ role</p>
-                    <p class="text-white mb-4">Assistant Vice President</p>
+<p class="text-green-400">$ whoami</p>
+<p class="text-white mb-4">Prithviraj V</p>
 
-                    <p class="text-green-400 text-sm mb-2">$ focus</p>
-                    <p class="text-white">Microservices • Event Systems • Cloud Platforms</p>
+<p class="text-green-400">$ role</p>
+<p class="text-white mb-4">Assistant Vice President</p>
 
-                </div>
+<p class="text-green-400">$ focus</p>
+<p class="text-white mb-4">
+Microservices • Event Driven Systems
+</p>
 
-            </div>
+<p class="text-green-400">$ stack</p>
+<p class="text-white">
+Go | Java | Angular | Kafka | OpenShift
+</p>
 
-        </div>
+</div>
 
-    </header>
+</div>
 
-    <!-- MAIN -->
+</div>
 
-    <main class="max-w-6xl mx-auto px-6 py-16 space-y-16">
+</header>
 
-        <!-- SKILLS -->
+<!-- MAIN -->
 
-        <section>
+<main class="max-w-6xl mx-auto px-6 py-20 space-y-20">
 
-            <h2 class="text-3xl font-bold mb-10">
-                Technical Expertise
-            </h2>
+<!-- ENGINEERING PHILOSOPHY -->
 
-            <div class="grid md:grid-cols-3 gap-8">
+<section class="section-card">
 
-                <div class="bg-white p-6 rounded-lg shadow-sm border">
+<h2 class="text-3xl font-bold mb-6">
+Engineering Philosophy
+</h2>
 
-                    <h3 class="font-semibold mb-4 text-lg">
-                        Languages
-                    </h3>
+<p class="text-slate-600 leading-relaxed">
+I focus on designing scalable systems using microservices and event-driven
+architecture. My goal is to build platforms where business logic is modular,
+deployments are resilient, and systems can evolve independently.
+</p>
 
-                    <div class="flex flex-wrap gap-2">
+<ul class="list-disc ml-6 mt-4 text-slate-600 space-y-2">
 
-                        <span class="skill">Java</span> <span class="skill">Go</span> <span
-                            class="skill">JavaScript</span> <span class="skill">TypeScript</span>
+<li>Domain-driven microservices design</li>
+<li>Event streaming architecture using Kafka</li>
+<li>Rule engines to decouple business logic</li>
+<li>Cloud-native deployments using containers</li>
+<li>Scalable distributed systems</li>
 
-                    </div>
+</ul>
 
-                </div>
+</section>
 
-                <div class="bg-white p-6 rounded-lg shadow-sm border">
+<!-- TECH SKILLS -->
 
-                    <h3 class="font-semibold mb-4 text-lg">
-                        Frontend
-                    </h3>
+<section class="section-card">
 
-                    <div class="flex flex-wrap gap-2">
+<h2 class="text-3xl font-bold mb-8">
+Technical Expertise
+</h2>
 
-                        <span class="skill">Angular</span> <span class="skill">React Native</span>
+<div class="grid md:grid-cols-3 gap-8">
 
-                    </div>
+<div>
 
-                </div>
+<h3 class="font-semibold mb-4">Languages</h3>
 
-                <div class="bg-white p-6 rounded-lg shadow-sm border">
+<div class="flex flex-wrap gap-2">
 
-                    <h3 class="font-semibold mb-4 text-lg">
-                        Architecture
-                    </h3>
+<span class="skill">Java</span> <span class="skill">Go</span> <span class="skill">JavaScript</span> <span class="skill">TypeScript</span>
 
-                    <div class="flex flex-wrap gap-2">
+</div>
 
-                        <span class="skill">Microservices</span> <span class="skill">Kafka</span> <span
-                            class="skill">Event-Driven Systems</span> <span class="skill">REST APIs</span>
+</div>
 
-                    </div>
+<div>
 
-                </div>
+<h3 class="font-semibold mb-4">Frontend</h3>
 
-                <div class="bg-white p-6 rounded-lg shadow-sm border">
+<div class="flex flex-wrap gap-2">
 
-                    <h3 class="font-semibold mb-4 text-lg">
-                        Cloud / DevOps
-                    </h3>
+<span class="skill">Angular</span> <span class="skill">React Native</span>
 
-                    <div class="flex flex-wrap gap-2">
+</div>
 
-                        <span class="skill">Azure DevOps</span> <span class="skill">OpenShift</span> <span
-                            class="skill">Docker</span> <span class="skill">Kubernetes</span>
+</div>
 
-                    </div>
+<div>
 
-                </div>
+<h3 class="font-semibold mb-4">Architecture</h3>
 
-                <div class="bg-white p-6 rounded-lg shadow-sm border">
+<div class="flex flex-wrap gap-2">
 
-                    <h3 class="font-semibold mb-4 text-lg">
-                        AI / Data
-                    </h3>
+<span class="skill">Microservices</span> <span class="skill">Kafka</span> <span class="skill">REST APIs</span> <span class="skill">Event Driven</span>
 
-                    <div class="flex flex-wrap gap-2">
+</div>
 
-                        <span class="skill">Azure AI</span> <span class="skill">Machine Learning</span> <span
-                            class="skill">Computer Vision</span>
+</div>
 
-                    </div>
+<div>
 
-                </div>
+<h3 class="font-semibold mb-4">Cloud / DevOps</h3>
 
-            </div>
+<div class="flex flex-wrap gap-2">
 
-        </section>
+<span class="skill">Docker</span> <span class="skill">Kubernetes</span> <span class="skill">OpenShift</span> <span class="skill">Azure DevOps</span>
 
-        <!-- EXPERIENCE -->
+</div>
 
-        <section>
+</div>
 
-            <h2 class="text-3xl font-bold mb-10">
-                Professional Experience
-            </h2>
+<div>
 
-            <div class="space-y-10">
+<h3 class="font-semibold mb-4">AI / Data</h3>
 
-                <div>
+<div class="flex flex-wrap gap-2">
 
-                    <h3 class="text-xl font-semibold">
-                        Assistant Vice President — Citi
-                    </h3>
+<span class="skill">Azure AI</span> <span class="skill">Machine Learning</span> <span class="skill">Computer Vision</span>
 
-                    <p class="text-sm text-slate-500 mb-4">
-                        Investment Banking Technology | Bangalore
-                    </p>
+</div>
 
-                    <ul class="list-disc ml-6 text-slate-600 space-y-2">
+</div>
 
-                        <li>Leading development of Deal Origination systems supporting complex M&A workflows.</li>
+</div>
 
-                        <li>Architecting event-driven microservices using Kafka for high throughput processing.</li>
+</section>
 
-                        <li>Managing containerized deployments using OpenShift.</li>
+<!-- ARCHITECTURE APPROACH -->
 
-                    </ul>
+<section class="section-card">
 
-                </div>
+<h2 class="text-3xl font-bold mb-6">
+Architecture Approach
+</h2>
 
-                <div>
+<p class="text-slate-600 mb-4">
+Typical architecture used across my enterprise projects:
+</p>
 
-                    <h3 class="text-xl font-semibold">
-                        Senior Full-Stack Developer — weSure
-                    </h3>
+<ul class="list-disc ml-6 text-slate-600 space-y-2">
 
-                    <p class="text-sm text-slate-500 mb-4">
-                        Insurance Technology Platform
-                    </p>
+<li>API Gateway managing client communication</li>
+<li>Microservices handling domain logic</li>
+<li>Kafka event streaming for asynchronous workflows</li>
+<li>Rule engine layer for dynamic business logic</li>
+<li>Container orchestration using OpenShift</li>
 
-                    <ul class="list-disc ml-6 text-slate-600 space-y-2">
+</ul>
 
-                        <li>Built enterprise B2B and B2C insurance platforms.</li>
+</section>
 
-                        <li>Developed AI solutions using Azure ML and computer vision.</li>
+<!-- EXPERIENCE -->
 
-                    </ul>
+<section class="section-card">
 
-                </div>
+<h2 class="text-3xl font-bold mb-8">
+Professional Experience
+</h2>
 
-            </div>
+<div class="space-y-8">
 
-        </section>
+<div>
 
-        <!-- PROJECTS -->
+<h3 class="text-xl font-semibold">
+Assistant Vice President — Citi
+</h3>
 
-        <section>
+<p class="text-sm text-slate-500 mb-4">
+Investment Banking Technology | Bangalore
+</p>
 
-            <h2 class="text-3xl font-bold mb-10">
-                Featured Projects
-            </h2>
+<ul class="list-disc ml-6 text-slate-600 space-y-2">
 
-            <div class="grid md:grid-cols-3 gap-8">
+<li>Leading development of deal origination platforms for M&A workflows.</li>
 
-                <div class="bg-white p-6 rounded-lg border hover:shadow-lg transition">
+<li>Architecting event-driven microservices using Kafka.</li>
 
-                    <h3 class="font-semibold text-lg mb-2">
-                        Rule Management System
-                    </h3>
+<li>Managing large-scale container deployments using OpenShift.</li>
 
-                    <p class="text-sm text-slate-600 mb-4">
-                        High-performance rule engine separating business logic from application services.
-                    </p>
+</ul>
 
-                    <a href="https://github.com/prithvirajv06/rule-management-system" target="_blank"
-                        class="text-brand font-semibold">
-                        View Repository → </a>
+</div>
 
-                </div>
+<div>
 
-                <div class="bg-white p-6 rounded-lg border hover:shadow-lg transition">
+<h3 class="text-xl font-semibold">
+Senior Full-Stack Developer — weSure
+</h3>
 
-                    <h3 class="font-semibold text-lg mb-2">
-                        Dental Clinic Marketing
-                    </h3>
+<p class="text-sm text-slate-500 mb-4">
+Insurance Technology Platform
+</p>
 
-                    <p class="text-sm text-slate-600 mb-4">
-                        Angular + Express lead management platform for clinics.
-                    </p>
+<ul class="list-disc ml-6 text-slate-600 space-y-2">
 
-                    <a href="https://github.com/prithvirajv06/dental-clinic-marketing" target="_blank"
-                        class="text-brand font-semibold">
-                        View Repository → </a>
+<li>Developed B2B and B2C insurance platforms.</li>
 
-                </div>
+<li>Implemented AI solutions using Azure ML and computer vision.</li>
 
-                <div class="bg-white p-6 rounded-lg border hover:shadow-lg transition">
+</ul>
 
-                    <h3 class="font-semibold text-lg mb-2">
-                        Nimbus UTA
-                    </h3>
+</div>
 
-                    <p class="text-sm text-slate-600 mb-4">
-                        Microservices utility architecture built using Go and Express.
-                    </p>
+</div>
 
-                    <a href="https://github.com/prithvirajv06/nimbus-uta" target="_blank"
-                        class="text-brand font-semibold">
-                        View Repository → </a>
+</section>
 
-                </div>
+<!-- PROJECTS -->
 
-            </div>
+<section class="section-card">
 
-        </section>
+<h2 class="text-3xl font-bold mb-10">
+Featured Projects
+</h2>
 
-        <!-- GITHUB -->
+<div class="grid md:grid-cols-3 gap-8">
 
-        <section class="text-center">
+<div>
 
-            <h2 class="text-3xl font-bold mb-10">
-                GitHub Activity
-            </h2>
+<h3 class="font-semibold text-lg mb-2">
+Rule Management System
+</h3>
 
-            <img src="https://github-readme-stats.vercel.app/api?username=prithvirajv06&show_icons=true&theme=default">
+<p class="text-sm text-slate-600 mb-3">
+A scalable rule engine built using Go that separates business logic from
+core application services.
+</p>
 
-        </section>
+<ul class="text-sm text-slate-600 list-disc ml-4 mb-3">
 
-    </main>
+<li>Dynamic rule evaluation engine</li>
+<li>REST API for rule execution</li>
+<li>Mobile interface using React Native</li>
 
-    <!-- FOOTER -->
+</ul>
 
-    <footer class="bg-dark text-slate-400 py-8 text-center">
+<a href="https://github.com/prithvirajv06/rule-management-system"
+target="_blank"
+class="text-brand font-semibold">
+View Repository → </a>
 
-        <p>© 2026 Prithviraj V</p>
+</div>
 
-        <div class="mt-4 flex justify-center gap-6 text-xl">
+<div>
 
-            <a href="https://github.com/prithvirajv06"><i class="fab fa-github"></i></a>
+<h3 class="font-semibold text-lg mb-2">
+Dental Clinic Marketing
+</h3>
 
-            <a href="https://linkedin.com/in/prithviraj-vetrivelu-8bb183264"><i class="fab fa-linkedin"></i></a>
+<p class="text-sm text-slate-600 mb-3">
+Angular + Express full stack platform designed to manage marketing leads
+for clinics.
+</p>
 
-        </div>
+<ul class="text-sm text-slate-600 list-disc ml-4 mb-3">
 
-    </footer>
+<li>Angular frontend</li>
+<li>Node.js REST API</li>
+<li>Lead capture system</li>
 
-    <style>
-        .skill {
-            padding: 6px 12px;
-            background: #eff6ff;
-            color: #2563eb;
-            border-radius: 999px;
-            font-size: 12px;
-            font-weight: 600;
-        }
-    </style>
+</ul>
 
-    <script>
+<a href="https://github.com/prithvirajv06/dental-clinic-marketing"
+target="_blank"
+class="text-brand font-semibold">
+View Repository → </a>
 
-        new Typed("#typing", {
-            strings: [
-                "Assistant Vice President",
-                "Full-Stack Architect",
-                "Microservices Specialist",
-                "Distributed Systems Engineer"
-            ],
-            typeSpeed: 60,
-            backSpeed: 40,
-            loop: true
-        })
+</div>
 
-    </script>
+<div>
+
+<h3 class="font-semibold text-lg mb-2">
+Nimbus UTA
+</h3>
+
+<p class="text-sm text-slate-600 mb-3">
+Utility microservice platform demonstrating scalable backend
+architecture using Go and Express.
+</p>
+
+<ul class="text-sm text-slate-600 list-disc ml-4 mb-3">
+
+<li>Microservice architecture</li>
+<li>REST API integration</li>
+<li>Containerized services</li>
+
+</ul>
+
+<a href="https://github.com/prithvirajv06/nimbus-uta"
+target="_blank"
+class="text-brand font-semibold">
+View Repository → </a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- GITHUB -->
+
+<section class="text-center">
+
+<h2 class="text-3xl font-bold mb-10">
+GitHub Activity
+</h2>
+
+<img src="https://github-readme-stats.vercel.app/api?username=prithvirajv06&show_icons=true&theme=default">
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer class="bg-dark text-slate-400 py-8 text-center">
+
+<p>© 2026 Prithviraj V</p>
+
+<div class="flex justify-center gap-6 mt-4 text-xl">
+
+<a href="https://github.com/prithvirajv06">
+<i class="fab fa-github"></i>
+</a>
+
+<a href="https://www.linkedin.com/in/prithviraj-vetrivelu-8bb183264/">
+<i class="fab fa-linkedin"></i>
+</a>
+
+</div>
+
+</footer>
+
+<script>
+
+new Typed("#typing",{
+strings:[
+"Assistant Vice President",
+"Full-Stack Architect",
+"Microservices Specialist",
+"Distributed Systems Engineer"
+],
+typeSpeed:60,
+backSpeed:40,
+loop:true
+})
+
+ScrollReveal().reveal(".section-card",{
+distance:"40px",
+duration:800,
+origin:"bottom",
+interval:200
+})
+
+</script>
 
 </body>
-
 </html>
